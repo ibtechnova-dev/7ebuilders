@@ -324,7 +324,7 @@ export const HomeScreen: React.FC = () => {
               <div className="relative w-36 h-36 shrink-0 rounded-full overflow-hidden border-2 border-brand-gold">
                 <Image
                   src="/images/ceo.jpeg"
-                  alt="CEO Tehseen Satti"
+                  alt="CEO Tahseen Satti"
                   fill
                   className="object-cover"
                 />

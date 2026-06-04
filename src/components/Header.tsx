@@ -2,9 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Button } from "./Button";
+import { LogoMark } from "./LogoMark";
 
 export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,16 +44,8 @@ export const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="relative w-12 h-12 md:w-14 md:h-14 overflow-hidden rounded bg-white shadow-sm flex items-center justify-center border border-zinc-200">
-              <Image
-                src="/logo7e.jpeg"
-                alt="7e Builders & Developers Logo"
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
+          <Link href="/" className="flex items-center gap-3">
+            <LogoMark className="h-12 w-auto md:h-14 shrink-0" />
             <div className="flex flex-col text-left">
               <span className="text-base md:text-lg font-bold tracking-tight text-brand-navy dark:text-white leading-none">
                 7E BUILDERS

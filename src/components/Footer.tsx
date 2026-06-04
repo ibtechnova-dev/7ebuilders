@@ -2,9 +2,9 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { InputText } from "./InputText";
 import { Button } from "./Button";
+import { LogoMark } from "./LogoMark";
 
 export const Footer: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -25,15 +25,8 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand Info */}
           <div className="flex flex-col gap-4 text-left">
-            <div className="flex items-center gap-2">
-              <div className="relative w-12 h-12 overflow-hidden rounded bg-white p-1 flex items-center justify-center">
-                <Image
-                  src="/logo7e.jpeg"
-                  alt="7e Builders & Developers Logo"
-                  fill
-                  className="object-contain"
-                />
-              </div>
+            <div className="flex items-center gap-3">
+              <LogoMark className="h-11 w-auto shrink-0" />
               <div className="flex flex-col text-left">
                 <span className="text-base font-bold tracking-tight text-white leading-none">
                   7E BUILDERS
@@ -48,9 +41,6 @@ export const Footer: React.FC = () => {
               craftsmanship. Creating futures with robust concrete foundations
               and breathtaking architectural designs.
             </p>
-            <div className="mt-2 text-xs font-bold tracking-wider text-brand-gold uppercase">
-              Building Dreams, Creating Futures
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -176,9 +166,15 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 mt-8 border-t border-zinc-800 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-zinc-500" suppressHydrationWarning>
-            &copy; {new Date().getFullYear()} 7e Builders &amp; Developers (Pvt) Ltd. All Rights Reserved.
-          </p>
+          <div className="flex flex-col gap-1 text-center md:text-left">
+            <p className="text-xs text-zinc-500" suppressHydrationWarning>
+              &copy; {new Date().getFullYear()}{" "}
+              7e Builders &amp; Developers (Pvt) Ltd. All Rights Reserved.
+            </p>
+            <p className="text-xs text-zinc-500">
+              Developed by <span className="text-brand-gold">IBTechnova</span>
+            </p>
+          </div>
           <div className="flex gap-4">
             {/* Social Icons */}
             <a

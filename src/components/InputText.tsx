@@ -13,7 +13,7 @@ interface InputTextProps
 }
 
 export const InputText = forwardRef<
-  HTMLInputElement & HTMLTextAreaElement,
+  HTMLInputElement | HTMLTextAreaElement,
   InputTextProps
 >(
   (
@@ -52,15 +52,15 @@ export const InputText = forwardRef<
         {multiline ? (
           <textarea
             id={inputId}
-            ref={ref as any}
+            ref={ref as React.Ref<HTMLTextAreaElement>}
             rows={rows}
             className={`${baseInputClasses} ${error ? errorInputClasses : ""} resize-none`}
-            {...(props as any)}
+            {...(props as React.TextareaHTMLAttributes<HTMLTextAreaElement>)}
           />
         ) : (
           <input
             id={inputId}
-            ref={ref as any}
+            ref={ref as React.Ref<HTMLInputElement>}
             type={type}
             className={`${baseInputClasses} ${error ? errorInputClasses : ""}`}
             {...props}

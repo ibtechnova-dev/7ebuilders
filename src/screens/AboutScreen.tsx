@@ -170,7 +170,7 @@ export const AboutScreen: React.FC = () => {
               <div className="relative w-48 h-48 md:w-56 md:h-56 shrink-0 rounded-xl overflow-hidden border-2 border-brand-gold shadow-lg">
                 <Image
                   src="/images/ceo.jpeg"
-                  alt="Tehseen Satti - Chairman & CEO"
+                  alt="Tahseen Satti - Chairman & CEO"
                   fill
                   className="object-cover"
                 />
