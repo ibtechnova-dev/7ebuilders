@@ -120,7 +120,7 @@ export const ProjectsScreen: React.FC = () => {
                 <div className="relative h-64 lg:h-auto lg:w-[45%] shrink-0 overflow-hidden">
                   <Image
                     src={project.image}
-                    alt={project.title}
+                    alt={`${project.title} ${project.location} residential project exterior`}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />

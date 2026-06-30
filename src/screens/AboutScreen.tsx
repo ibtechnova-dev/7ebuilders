@@ -76,7 +76,7 @@ export const AboutScreen: React.FC = () => {
           <div className="relative h-96 lg:h-[450px] rounded-2xl overflow-hidden shadow-2xl">
             <Image
               src="/images/project-tower.png"
-              alt="Iconic Tower Architectural Render"
+              alt="7E Builders Islamabad residential tower architectural exterior"
               fill
               className="object-cover"
             />
@@ -170,7 +170,7 @@ export const AboutScreen: React.FC = () => {
               <div className="relative w-48 h-48 md:w-56 md:h-56 shrink-0 rounded-xl overflow-hidden border-2 border-brand-gold shadow-lg">
                 <Image
                   src="/images/ceo-tahseen-asghar-2026.jpeg"
-                  alt="Tahseen Satti - Chairman & CEO"
+                  alt="Muhammad Tahseen Asghar Tahseen Satti Chairman and CEO of 7E Builders"
                   fill
                   className="object-cover"
                 />
@@ -198,7 +198,7 @@ export const AboutScreen: React.FC = () => {
               <div className="relative w-48 h-48 md:w-56 md:h-56 shrink-0 rounded-xl overflow-hidden border-2 border-brand-gold shadow-lg">
                 <Image
                   src="/images/director.jpeg"
-                  alt="Bilal Satti - Managing Director"
+                  alt="Bilal Satti Managing Director of 7E Builders"
                   fill
                   className="object-cover"
                 />

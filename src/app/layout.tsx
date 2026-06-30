@@ -3,8 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
-
-const siteUrl = "https://7ebuildersanddevelopers.com";
+import { jsonLdScript, organizationJsonLd, siteUrl } from "../lib/seo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,11 +18,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "7E Builders & Developers | CEO Tahseen Satti",
-    template: "%s | 7E Builders & Developers",
+    default: "7E Builders Islamabad Real Estate Developers",
+    template: "%s",
   },
   description:
-    "7E Builders & Developers (Pvt) Ltd is a real estate construction and development company in Islamabad and Lahore, led by Chairman & CEO Muhammad Tahseen Asghar, also known as Tahseen Satti.",
+    "7E Builders & Developers is an Islamabad construction company and real estate developer serving Islamabad and Lahore.",
   keywords: [
     "7E Builders",
     "7E Developers",
@@ -53,9 +52,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "7E Builders & Developers | CEO Tahseen Satti",
+    title: "7E Builders Islamabad Real Estate Developers",
     description:
-      "Official website of 7E Builders & Developers, led by Chairman & CEO Muhammad Tahseen Asghar, also known as Tahseen Satti.",
+      "Official website of 7E Builders & Developers, an Islamabad construction company and real estate developer.",
     url: siteUrl,
     siteName: "7E Builders & Developers",
     images: [
@@ -71,9 +70,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "7E Builders & Developers | CEO Tahseen Satti",
+    title: "7E Builders Islamabad Real Estate Developers",
     description:
-      "7E Builders & Developers is led by Chairman & CEO Muhammad Tahseen Asghar, also known as Tahseen Satti.",
+      "7E Builders & Developers is an Islamabad construction company and real estate developer.",
     images: ["/logo7e-coded.svg"],
   },
   robots: {
@@ -86,40 +85,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
       "max-video-preview": -1,
     },
-  },
-};
-
-const organizationJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
-  name: "7E Builders & Developers",
-  alternateName: [
-    "7E Developers",
-    "7E Builder and Developer",
-    "7E Builders and Developers",
-    "7EBuildersandDevelopers",
-  ],
-  url: siteUrl,
-  logo: `${siteUrl}/logo7e-coded.svg`,
-  email: "ceo@7ebuildersanddevelopers.com",
-  telephone: "+92 300 5309701",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Office No.1 Building 7E Lehtrar Road, Thandapani",
-    addressLocality: "Islamabad",
-    addressCountry: "PK",
-  },
-  founder: {
-    "@type": "Person",
-    name: "Muhammad Tahseen Asghar",
-    alternateName: ["Tahseen Satti", "Tahseen Asghar"],
-    jobTitle: "Chairman & CEO",
-  },
-  employee: {
-    "@type": "Person",
-    name: "Muhammad Tahseen Asghar",
-    alternateName: ["Tahseen Satti", "Tahseen Asghar"],
-    jobTitle: "Chairman & CEO",
   },
 };
 
@@ -137,7 +102,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col justify-between" suppressHydrationWarning>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+          dangerouslySetInnerHTML={jsonLdScript(organizationJsonLd)}
         />
         <Header />
         <main className="flex-grow flex flex-col">{children}</main>

@@ -98,7 +98,7 @@ export const HomeScreen: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/project-villa.png"
-            alt="Hero Background"
+            alt="Luxury villa exterior by 7E Builders in Islamabad"
             fill
             className="object-cover opacity-20 filter brightness-50"
             priority
@@ -140,7 +140,7 @@ export const HomeScreen: React.FC = () => {
             <div className="relative h-48 w-full rounded-lg overflow-hidden">
               <Image
                 src="/images/project-townhouse.png"
-                alt="7e Townhouses"
+                alt="Vista Valley Islamabad townhouse exterior"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />
@@ -199,7 +199,7 @@ export const HomeScreen: React.FC = () => {
             <div className="relative h-72 md:h-96 rounded-lg overflow-hidden shadow-lg mt-8">
               <Image
                 src="/images/project-villa.png"
-                alt="Luxury Construction"
+                alt="Islamabad luxury residential villa construction exterior"
                 fill
                 className="object-cover"
               />
@@ -207,7 +207,7 @@ export const HomeScreen: React.FC = () => {
             <div className="relative h-72 md:h-96 rounded-lg overflow-hidden shadow-lg">
               <Image
                 src="/images/project-tower.png"
-                alt="Corporate Development"
+                alt="Islamabad residential tower development exterior"
                 fill
                 className="object-cover"
               />
@@ -263,7 +263,7 @@ export const HomeScreen: React.FC = () => {
                 <div className="relative h-64 w-full overflow-hidden">
                   <Image
                     src={project.image}
-                    alt={project.title}
+                    alt={`${project.title} ${project.location} residential project exterior`}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -324,7 +324,7 @@ export const HomeScreen: React.FC = () => {
               <div className="relative w-36 h-36 shrink-0 rounded-full overflow-hidden border-2 border-brand-gold">
                 <Image
                   src="/images/ceo-tahseen-asghar-2026.jpeg"
-                  alt="CEO Tahseen Satti"
+                  alt="Muhammad Tahseen Asghar Tahseen Satti Chairman and CEO of 7E Builders"
                   fill
                   className="object-cover"
                 />
@@ -349,7 +349,7 @@ export const HomeScreen: React.FC = () => {
               <div className="relative w-36 h-36 shrink-0 rounded-full overflow-hidden border-2 border-brand-gold">
                 <Image
                   src="/images/director.jpeg"
-                  alt="MD Bilal Satti"
+                  alt="Bilal Satti Managing Director of 7E Builders"
                   fill
                   className="object-cover"
                 />
