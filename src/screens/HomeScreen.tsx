@@ -323,7 +323,7 @@ export const HomeScreen: React.FC = () => {
             <div className="flex flex-col md:flex-row items-center gap-8 bg-white dark:bg-brand-dark-navy p-6 rounded-xl shadow-lg border border-zinc-100 dark:border-zinc-800 text-left">
               <div className="relative w-36 h-36 shrink-0 rounded-full overflow-hidden border-2 border-brand-gold">
                 <Image
-                  src="/images/ceo.jpeg"
+                  src="/images/ceo-tahseen-asghar-2026.jpeg"
                   alt="CEO Tahseen Satti"
                   fill
                   className="object-cover"

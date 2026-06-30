@@ -169,7 +169,7 @@ export const AboutScreen: React.FC = () => {
             <div className="flex flex-col md:flex-row items-center md:items-start gap-10 bg-white dark:bg-brand-dark-navy p-8 rounded-2xl shadow-xl border border-zinc-100 dark:border-zinc-800 text-left">
               <div className="relative w-48 h-48 md:w-56 md:h-56 shrink-0 rounded-xl overflow-hidden border-2 border-brand-gold shadow-lg">
                 <Image
-                  src="/images/ceo.jpeg"
+                  src="/images/ceo-tahseen-asghar-2026.jpeg"
                   alt="Tahseen Satti - Chairman & CEO"
                   fill
                   className="object-cover"
